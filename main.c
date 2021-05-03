@@ -13,19 +13,19 @@ int main(){
         number[i] = 0;
     }
     GenerateNumbers();
-    GenerateStrings();
+//     GenerateStrings();
 
     struct timeval start;
     struct timeval end;
     unsigned long diff;
 
     gettimeofday(&start, NULL);
-    QuickSortNum();
-    QuickSortStr();
-    MergeSortNum();
-    MergeSortStr();
-    HeapSortNum();
-    HeapSortStr();
+    QuickSortNum(number, 0, Total);
+//     QuickSortStr(str, 0, Total);
+//     MergeSortNum(number, 0, Total);
+//     MergeSortStr(str, 0, Total);
+//     HeapSortNum(number, Total);
+//     HeapSortStr(str, Total);
     gettimeofday(&end, NULL);
 
     diff = 1000000 * (end.tv_sec - start.tv_sec) + end.tv_usec - start.tv_usec;
