@@ -3,8 +3,6 @@
 #include<string.h>
 #include"myHeader.h"
 
-// #define Total 1000000
-
 void GenerateNumbers(){
     int number[Total];
     FILE *fp;
