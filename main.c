@@ -9,12 +9,21 @@ char *str[Total];
 
 int main(){
     int i;
+    char temp[2048];
     for(i=0; i<Total; i++){
         number[i] = 0;
     }
+    FILE *fp;
+    
     GenerateNumbers();
+    fp = fopen("dataset1.txt", "r");
+    while(fgets(temp, 2048, fp)){
+        number[i] = atoi(temp);
+    }
+    fclose(fp);
 //     GenerateStrings();
-
+    fp = fopen("dataset2.txt", "r");
+    while(fgets(
     struct timeval start;
     struct timeval end;
     unsigned long diff;
