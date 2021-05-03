@@ -14,6 +14,6 @@ void MergeSortNum(int *number, int first, int last);
 void MergeSortStr(char *str[], int first, int last);
 
 void HeapSortNum(int *number, int total);
-void HeapSortNum(char *str[], int total);
+void HeapSortStr(char *str[], int total);
 
 #endif
