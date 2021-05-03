@@ -17,13 +17,20 @@ int main(){
     
     GenerateNumbers();
     fp = fopen("dataset1.txt", "r");
+    i=0;
     while(fgets(temp, 2048, fp)){
         number[i] = atoi(temp);
+        i++;
     }
     fclose(fp);
 //     GenerateStrings();
-    fp = fopen("dataset2.txt", "r");
-    while(fgets(
+//     fp = fopen("dataset2.txt", "r");
+//     i=0;
+//     while(fgets(temp, 2048, fp)){
+//         str[i] = strdup(temp);
+//     i++;
+//     }
+//     fclose(fp);
     struct timeval start;
     struct timeval end;
     unsigned long diff;
