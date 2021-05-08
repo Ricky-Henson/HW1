@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
-#include "myHeader.c"
+#include "myHeader.h"
 
 // assignment
 void swapNum(int *a, int *b) {
@@ -24,8 +24,8 @@ void heapifyNum(int number[], int n, int i) {
   
     // Swap and continue heapifying if root is not largest
     if (largest != i) {
-        swap(&number[i], &number[largest]);
-        heapify(number, n, largest);
+        swapNum(&number[i], &number[largest]);
+        heapifyNum(number, n, largest);
     }
 }
   
@@ -33,14 +33,14 @@ void heapifyNum(int number[], int n, int i) {
 void HeapSortNum(int number[], int n) {
     // Build max heap
     for (int i = n / 2 - 1; i >= 0; i--)
-        heapify(number, n, i);
+        heapifyNum(number, n, i);
   
     // Heap sort
     for (int i = n - 1; i >= 0; i--) {
-        swap(&number[0], &number[i]);
+        swapNum(&number[0], &number[i]);
   
       // Heapify root element to get highest element at root again
-        heapify(number, i, 0);
+        heapifyNum(number, i, 0);
     }
 }
 
