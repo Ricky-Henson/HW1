@@ -1,4 +1,4 @@
-all: main.o myHeader.o QuickSort.o MergeSort.o Heapsort.o
+all: main.o myHeader.o QuickSort.o MergeSort.o HeapSort.o
 	gcc main.o myHeader.o QuickSort.o MergeSort.o HeapSort.o -o all
 
 main.o: main.c
