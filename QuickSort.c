@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
-#include "myHeader.c"
+#include "myHeader.h"
 
 void QuickSortNum(int *number,int first,int last){
    int i, j, pivot, temp;
