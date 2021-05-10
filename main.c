@@ -37,9 +37,9 @@ int main(){
 
     gettimeofday(&start, NULL);
     QuickSortNum(number, 0, Total);
-//     QuickSortStr(str, 0, Total);
+//     QuickSortStr(str, 0, Total-1);
 //     MergeSortNum(number, 0, Total);
-//     MergeSortStr(str, 0, Total);
+//     MergeSortStr(str, 0, Total-1);
 //     HeapSortNum(number, Total);
 //     HeapSortStr(str, Total);
     gettimeofday(&end, NULL);
